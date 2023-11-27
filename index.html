@@ -1,0 +1,174 @@
+<!-- Creating a Gym Website Using HTML5 & CSS3  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon's Fitness</title>
+</head>
+<link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Ubuntu:wght@300&family=Ysabeau+Infant:wght@800&display=swap"
+    rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Ysabeau Infant', sans-serif;
+        color: aliceblue;
+        margin: 0px;
+        padding: 0px;
+        /* background-image: url('img/65.jpg'); */
+        background-color: aqua;
+        /* There is a mistake here(img) */
+    }
+
+    .left {
+        display: inline-block;
+        left: 40px;
+        top: 20px;
+        position: absolute;
+        /* border: 2px solid rgb(201, 210, 27); */
+    }
+
+    .left img {
+        width: 150px;
+        filter: invert(1);
+
+    }
+
+    .mid {
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+
+        /* border: 2px solid rgb(176, 199, 141); */
+    }
+
+    .right {
+        display: inline-block;
+        right: 34px;
+        top: 20px;
+        position: absolute;
+        /* border: 2px solid rgb(213, 172, 172); */
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: aliceblue;
+        text-decoration: none;
+        padding: 30px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .btn {
+        font-family: 'Ysabeau Infant', sans-serif;
+        background-color: black;
+        margin: 0px 9px;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid rgb(167, 160, 160);
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(53, 50, 50);
+    }
+
+    .container {
+        /* border: 2px solid white; */
+        margin: 225px 45px;
+        padding: 25px;
+        width: 27%;
+        border-radius: 28px;
+    }
+    .container h1{
+    text-align: center;
+    }
+    .form-group input{
+        font-family: 'Ysabeau Infant', sans-serif;
+        text-align: center;
+        display: block;
+        width: 300px;
+        margin:3px auto ;
+        font-size: 20px;
+        border-radius: 8px;
+    }
+    .container button{
+        background-color: white;
+        color: black;
+        font-family: 'Ysabeau Infant', sans-serif;
+        text-align: center;
+        display: block;
+        width: 300px;
+        margin:3px auto ;
+        font-size: 15px;
+        border-radius: 8px;
+    }
+
+</style>
+
+<body>
+    <header class="head">
+        <!-- Left box for Logo -->
+        <div class="left">
+            <img src="img/LOGO3.jpg" alt="">
+        </div>
+
+        <!-- Mid box for Navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for Buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Join the best gym of Gardenreach now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Phone Number">
+            </div>
+
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
